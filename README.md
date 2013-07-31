@@ -39,6 +39,7 @@ config:
 
 var jsonD = `{
         "foo": "bar",
+        "key": true,
         "api": {
             "port": 3000
         }
@@ -107,6 +108,28 @@ func main() {
     // exporting
     fmt.Println(i.Export(chief.JSON))
 }
+```
+
+***Not to like***
+```go
+
+ // valJson, err := i.GetBool(foo)
+
+```
+
+***Like better***
+```go
+
+    valJson, err := i.Get(chief.JSON, "key") // output => true
+
+    if err != nil {
+        panic(err)
+    }
+
+    if valJson.(bool) {
+        fmt.Println("true !")
+    }
+
 ```
 
 ![](http://www.topito.com/wp-content/uploads/2013/01/code-34.gif)
