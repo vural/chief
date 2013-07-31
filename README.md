@@ -103,6 +103,9 @@ func main() {
     fmt.Println(valJson) // output => 3000
     fmt.Println(valYaml) // output => github.com
     fmt.Println(valIni)  // output => bar
+
+    // exporting
+    fmt.Println(i.Export(chief.JSON))
 }
 ```
 
