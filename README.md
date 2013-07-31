@@ -15,7 +15,7 @@ go get github.com/vural/chief
 
 ### usage ###
 
-**json handler**
+**example for json, yaml and ini handlers**
 ```go
 package main
 
