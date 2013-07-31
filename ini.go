@@ -26,6 +26,7 @@ func (c *handlerIni) ImportFile(filename string) error {
 	r := bytes.NewReader([]byte(content))
 	file, err := ini.Load(r)
 	c.m = &file
+	c.raw = string(content)
 	return err
 }
 
