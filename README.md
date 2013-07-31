@@ -110,16 +110,13 @@ func main() {
 }
 ```
 
-***Not to like***
+***not to like***
 ```go
-
  // valJson, err := i.GetBool(foo)
-
 ```
 
-***Like better***
+***like better***
 ```go
-
     valJson, err := i.Get(chief.JSON, "key") // output => true
 
     if err != nil {
@@ -129,7 +126,6 @@ func main() {
     if valJson.(bool) {
         fmt.Println("true !")
     }
-
 ```
 
 ![](http://www.topito.com/wp-content/uploads/2013/01/code-34.gif)
