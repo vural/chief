@@ -110,12 +110,12 @@ func main() {
 }
 ```
 
-***not to like***
+**not to like**
 ```go
  // valJson, err := i.GetBool(foo)
 ```
 
-***like better***
+**like better**
 ```go
     valJson, err := i.Get(chief.JSON, "key") // output => true
 
