@@ -127,5 +127,3 @@ func main() {
         fmt.Println("true !")
     }
 ```
-
-![](http://www.topito.com/wp-content/uploads/2013/01/code-34.gif)
